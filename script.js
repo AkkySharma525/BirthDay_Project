@@ -255,4 +255,14 @@ startButton.addEventListener('click', () => {
 
     let endDate = new Date('Sept 29, 2024 22:8:00').getTime();
     startCountdown(endDate, finalCountdown);
+
+    const video = document.getElementById('myVideo');
+
+  video.addEventListener('click', function() {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
 });
