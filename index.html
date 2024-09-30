@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish!!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="surprise-btn">
+            <button id="start-btn">Tap for a Smile</button>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div id="countdown-container" style="display:none; text-align: center; padding: 10px;">
+            <h2 style="font-size: 8vw; line-height: 1.5; margin: 10px 0; color: #B8860B;">
+                20 Years Young in just :
+            </h2>
+            <h1 id="countdown" style="font-size: 8vw;"></h1>
+        
+            <h2 id="birthday-message" style="display:none; font-size: 3vw; line-height: 1.5; color: #DAA520; font-family: 'Brush Script MT', cursive;">
+                Happy 20th Birthday, Aastha Tiwari! 🎉💖 On this special day, I just want to take a moment to celebrate you and all the joy you bring into my life. As you step into this new decade, I wish you endless happiness, love, and success in everything you pursue. May each day be filled with laughter, adventures, and beautiful memories. Here's to many more birthdays together, filled with love and joy! Enjoy your day to the fullest!
+            </h2>
+            
+        </div>
+        
+
+        <!-- Big "20" after countdown -->
+        <div id="big-20" style="display:none;">
+            <h1>20</h1>
+        </div>
+
+        <!-- Video Section -->
+        <div id="video-container" style="display:none;">
+
+            <video id="birthday-video" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <video id="birthday-video" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        
+        
+
+        <!-- Photo Gallery -->
+        <div id="photo-gallery" style="display:none;">
+            <div class="gallery">
+                <img src="p5.jpg" alt="Photo 1">
+                <img src="p2.jpg" alt="Photo 2">
+                <img src="p1.jpg" alt="Photo 3">
+                <img src="p4.jpg" alt="Photo 4">
+                <img src="p3.jpg" alt="Photo 5">
+            </div>
+        </div>
+
+        <!-- Fireworks, Hearts, Balloons -->
+        <canvas id="fireworks" style="display:none;"></canvas>
+        <div id="floating-hearts" style="display:none;"></div>
+    </div>
+    
+    <audio id="birthday-audio" loop>
+        <source src="AudioNew.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+        // Play the audio after a user interacts with the page (e.g., clicks)
+        document.addEventListener('click', function() {
+            var audio = document.getElementById('birthday-audio');
+            audio.play();
+        });
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
