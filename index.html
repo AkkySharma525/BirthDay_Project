@@ -19,18 +19,20 @@
             </h2>
             <h1 id="countdown" style="font-size: 8vw;"></h1>
         
-            <h2 id="birthday-message" style="display:none; font-size: 3vw; line-height: 1.5; color: #DAA520; font-family: 'Brush Script MT', cursive;">
-                Happy 20th Birthday, Aastha Tiwari! 🎉💖 On this special day, I just want to take a moment to celebrate you and all the joy you bring into my life. As you step into this new decade, I wish you endless happiness, love, and success in everything you pursue. May each day be filled with laughter, adventures, and beautiful memories. Here's to many more birthdays together, filled with love and joy! Enjoy your day to the fullest!
-            </h2>
+            
             
         </div>
         
 
         <!-- Big "20" after countdown -->
         <div id="big-20" style="display:none;">
-            <h1>20</h1>
+            <h1 style="font-size: 12vw;">HAPPY<br>20th<br>BIRTHDAY<br>AASTHA !!</h1>
         </div>
-
+        
+        <h2 id="birthday-message" style="display:none; font-size: 3vw; line-height: 1.5; color: #DAA520; font-family: 'Brush Script MT', cursive;">
+            Happy 20th Birthday, Aastha Tiwari! 🎉💖 On this special day, I just want to take a moment to celebrate you and all the joy you bring into my life. As you step into this new decade, I wish you endless happiness, love, and success in everything you pursue. May each day be filled with laughter, adventures, and beautiful memories. Here's to many more birthdays together, filled with love and joy! Enjoy your day to the fullest!
+        </h2>
+        
         <!-- Video Section -->
         <div id="video-container" style="display:none;">
 
@@ -40,7 +42,7 @@
             </video>
 
             <video id="birthday-video" controls>
-                <source src="video.mp4" type="video/mp4">
+                <source src="newVideo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -70,10 +72,16 @@
     </audio>
     
     <script>
-        // Play the audio after a user interacts with the page (e.g., clicks)
+        // Toggle between play and pause on click
         document.addEventListener('click', function() {
             var audio = document.getElementById('birthday-audio');
-            audio.play();
+    
+            // Check if the audio is playing
+            if (audio.paused) {
+                audio.play(); // Play the audio if it's paused
+            } else {
+                audio.pause(); // Pause the audio if it's playing
+            }
         });
     </script>
     

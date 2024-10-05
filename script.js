@@ -253,7 +253,7 @@ startButton.addEventListener('click', () => {
     document.getElementById('surprise-btn').style.display = 'none';
     document.getElementById('countdown-container').style.display = 'block';
 
-    let endDate = new Date('Sept 29, 2024 22:8:00').getTime();
+    let endDate = new Date('Oct 6, 2024 01:22:00').getTime();
     startCountdown(endDate, finalCountdown);
 
     const video = document.getElementById('myVideo');
